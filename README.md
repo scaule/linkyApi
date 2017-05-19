@@ -1,7 +1,5 @@
 # Linky Api
 
-
-
 ## Getting Started
 
 This project help you to install your own linky (enedis, edf) api to with python to fetch your own
@@ -9,71 +7,38 @@ electric consumption and use it like you want.
 
 ### Prerequisites
 
-Python
+Only Python and Flask
 
-```
-Give examples
-```
 
 ### Installing
 
-
-
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+pip install Flask
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+You only have to install all files on your servers and use :
+
+```
+python app.py
+```
+
+This start a new server on port 5000
+
+## Using it on your navigator
+
+http://serverIp:5000/consumption/month?login=your_login&password=your_password&start=01/04/2017&end=30/05/2017
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Flask](http://flask.pocoo.org/) - Flask is a microframework for Python based on Werkzeug
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+***Caule Simon **
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
 
 ## License
 
@@ -81,6 +46,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+Inspired by (if you have to check your consumption in your kindle it's for you) : https://github.com/outadoc/linkindle
